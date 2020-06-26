@@ -60,16 +60,16 @@ public class SecondFragment extends Fragment {
 
     private void checkSelectedItem(int color, RadioGroup rg) {
         switch (color) {
-            case R.id.red:
+            case Color.RED:
                 rg.check(R.id.red);
                 break;
-            case R.id.blue:
+            case Color.BLUE:
                 rg.check(R.id.blue);
                 break;
-            case R.id.green:
+            case Color.GREEN:
                 rg.check(R.id.green);
                 break;
-            case R.id.pink:
+            case COLOR_PINK:
                 rg.check(R.id.pink);
                 break;
         }
