@@ -13,12 +13,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DrawingView dv;
-
-        dv = new DrawingView(this);
-        setContentView(dv);
-
-        dv.setDrawColor(Color.RED);
-
     }
 }
