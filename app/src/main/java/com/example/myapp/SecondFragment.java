@@ -28,8 +28,7 @@ public class SecondFragment extends Fragment {
 
         if(getArguments() != null){
             int color = getArguments().getInt("color");
-
-
+            checkSelectedItem(color, rg);
         }
 
 
@@ -57,6 +56,23 @@ public class SecondFragment extends Fragment {
         });
 
         return root;
+    }
+
+    private void checkSelectedItem(int color, RadioGroup rg) {
+        switch (color) {
+            case R.id.red:
+                rg.check(R.id.red);
+                break;
+            case R.id.blue:
+                rg.check(R.id.blue);
+                break;
+            case R.id.green:
+                rg.check(R.id.green);
+                break;
+            case R.id.pink:
+                rg.check(R.id.pink);
+                break;
+        }
     }
 
 }
